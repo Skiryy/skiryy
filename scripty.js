@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         5: {
             title: "C++",
-            images: ["Images/Projects/CPP1.png", "project5_img2.jpg", "project5_img3.jpg"],
+            images: ["Images/Projects/CPP1.png", "project5_img2.jpg", "Images/Projects/CPP3.png"],
             texts: [
                 "Last year I participated in a pre-university programme from the Vrije Universiteit in Amsterdam. This programme focussed on the basics of C++ and code optimization. It was a 3 month programme with weekly assignments all focussing on a different part of the language such as optimization, data structuring and recursion.",
                 "The final assignments focussed on recursion. The first was the classic N Queens, where you have an variable N and then a N by N chessboard was created with N amount of queens, but none of the queens should be able to hit eachother in one move.",
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                     <div class="project-section reverse">
                         <p>${project.texts[1]}</p>
-                        <img src="${project.images[1]}" alt="${project.title} Image 2">
+                        <img src="${project.images[1]}" alt="">
                     </div>
                     <div class="project-section">
                         <img src="${project.images[2]}" alt="${project.title} Image 3">
