@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const squares = document.querySelectorAll(".square");
     const projectDetails = document.getElementById("project-details");
 
-    // 🔹 FULLY CUSTOMIZABLE PROJECT DATA (Title, 3 images, 3 text sections)
     const projectData = {
         1: {
             title: "A simulated ecosystem",
@@ -51,13 +50,11 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     };
 
-    // 🔹 ADD CLICK FUNCTIONALITY TO PROJECT BUTTONS
     squares.forEach(square => {
         square.addEventListener("click", function () {
             const projectId = this.getAttribute("data-project");
             const project = projectData[projectId];
 
-            // 🔹 DISPLAY PROJECT DETAILS (All 3 images & text sections)
             if (project) {
                 projectDetails.innerHTML = `
                     <h1>${project.title}</h1>
@@ -80,7 +77,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // 🔹 CLOSE DETAILS WHEN CLICKING OUTSIDE
     document.addEventListener("click", (event) => {
         if (!event.target.closest(".square") && !event.target.closest("#project-details")) {
             projectDetails.classList.remove("show");
