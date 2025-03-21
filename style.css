@@ -16,7 +16,7 @@ body {
 /* Navigation Bar */
 .navbar {
     position: fixed;
-    top: 0; left: 0; width: 212vh;
+    top: 0; left: 0; width: 100%;
     background: rgba(250, 241, 230, 0.6);
     padding: 15px 50px;
     display: flex;
