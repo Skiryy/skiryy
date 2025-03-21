@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Expandable Projects</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">JD</div>
+        <a href="index.html">Home</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="intro">
+        <h1 class="title">My Projects</h1>
+        <p class="description">Here are some of the projects I have worked on. Click a project to learn more!</p>
+    </div>
+
+    <div class="portfolio-container" id="portfolio-container">
+        <div class="square" data-project="1">
+            <h3>A simulated ecosystem</h3>
+        </div>
+        <div class="square" data-project="2">
+            <h3>Ascendants</h3>
+        </div>
+        <div class="square" data-project="3">
+            <h3>MMM Escape</h3>
+        </div>
+        <div class="square" data-project="4">
+            <h3>Pest Control</h3>
+        </div>
+        <div class="square" data-project="5">
+            <h3>C++</h3>
+        </div>
+    </div>
+
+    <div id="project-details" class="hidden"></div>
+
+    <script src="scripty.js"></script>
+</body>
+</html>

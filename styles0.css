@@ -1,0 +1,174 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #FDF6EC; /* Soft cream background */
+    color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(245, 240, 230, 0.9);
+    padding: 15px 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #668b65;
+    margin-right: auto;
+}
+
+.navbar a {
+    color: #668b65;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background: #668b65;
+    color: white;
+}
+
+/* Title Section */
+.intro {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.title {
+    font-size: 48px; /* Bigger title */
+    font-weight: bold;
+    color: #668b65; /* Green color */
+}
+
+.description {
+    font-size: 20px;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Project Grid */
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+}
+
+/* Project Squares */
+.square {
+    width: 220px;
+    height: 220px;
+    background: #7FAF76;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    transition: transform 0.3s, background 0.3s;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Ensure only project title is shown initially */
+.square h3 {
+    margin: 0;
+    transition: opacity 0.3s;
+}
+
+/* Hide details text initially */
+.square .expand-content {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* On hover, reveal details */
+.square:hover .expand-content {
+    opacity: 1;
+}
+
+/* Keep project title visible on hover */
+.square:hover h3 {
+    opacity: 1;
+}
+
+.square:hover {
+    transform: scale(1.1);
+    background: #6E9E65;
+}
+
+/* Expanded Project Details */
+#project-details {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 900px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 100;
+}
+
+#project-details.show {
+    display: block;
+}
+
+.project-section {
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
+    gap: 20px;
+}
+
+.project-section img {
+    width: 40%;
+    border-radius: 10px;
+}
+
+.project-section p {
+    flex: 1;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #444;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Hidden Class */
+.hidden {
+    display: none;
+}

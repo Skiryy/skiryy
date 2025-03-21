@@ -1,0 +1,118 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    overflow-x: hidden;
+    background: #FDF6EC;
+}
+
+
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0; left: 0; width: 212vh;
+    background: rgba(250, 241, 230, 0.6);
+    padding: 15px 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transition: top 0.3s;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #99BC85;
+    margin-right: auto;
+}
+
+.navbar a {
+    color: #99BC85;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 16px;
+    border: 2px solid #99BC85;
+    border-radius: 20px;
+    transition: color 0.3s, background 0.3s, transform 0.3s;
+}
+
+.navbar a:hover {
+    color: black;
+    background: #99BC85;
+    transform: scale(1.1);
+}
+
+/* Main Section (Stacks everything vertically) */
+.name-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centers vertically */
+    height: 100vh;
+    text-align: center;
+    gap: 250px;
+    padding-top: 650px;
+}
+
+/* Name */
+.name h1 {
+    font-size: 50px;
+    color: #99BC85;
+}
+.name h3 {
+  color: black;
+}
+
+/* Short Intro */
+.ShortIntro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.about-content {
+  background: rgba(250, 241, 230, 0.6);
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    text-align: top;
+    max-width: 800px;
+    color: black;
+    border: 2px solid #99BC85;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+        margin-bottom: 30px;
+
+}
+
+.about img {
+    width: 1750px;
+    height: 250px;
+    margin-right: 20px; /* Space below image */
+    background: gray; /* Placeholder for Image */
+}
+
+.about-text {
+    color: black;
+}
+
+/* JavaScript-controlled Navbar Visibility */
+.hidden {
+    top: -70px;
+}
